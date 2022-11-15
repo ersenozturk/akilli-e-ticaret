@@ -15,6 +15,7 @@
   --color-white: #ffffff;
   --bg-categories: #f4f4f4;
   --green: #33a969;
+  --pin-red: #F55B5C;
 
   /* rest of the vars */
   --borderRadius-light: 0.15rem;
@@ -65,6 +66,15 @@ ul {
   justify-content: space-between;
 }
 
+.fs-12{
+  font-size: 12px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fw-bold{
+  font-weight: bold;
+}
 /*! global classses END------------*/
  
 

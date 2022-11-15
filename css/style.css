@@ -1,49 +1,122 @@
 /*! all page styles START */
 #wrapperOut {
-    margin-left: calc((100vw - 100%) / -2);
-    margin-right: calc((100vw - 100%) / -2);
-  }
-  
-  #wrapperInner {
-    max-width: 1516px;
-    margin: 0 auto;
-  }
-  
-  #wrapper {
-    margin: 0 100px;
-  } 
+  margin-left: calc((100vw - 100%) / -2);
+  margin-right: calc((100vw - 100%) / -2);
+}
+
+#wrapperInner {
+  max-width: 1516px;
+  margin: 0 auto;
+}
+
+#wrapper {
+  margin: 0 100px;
+}
 /*! all page styles END------------ */
 
 /*! header START */
-header{
-    padding: 16px 0;
+header {
+  padding: 16px 0;
 }
-header span{
-    font-size: 12px;
-    color: var(--color-light);
+header span {
+  font-size: 12px;
+  color: var(--color-light);
 }
 /* supheader */
-.truck{
-    color: var(--blue);
+.truck {
+  color: var(--blue);
 }
 
-#supheader-right span{
-    padding: 0 10px;
+#supheader-right span {
+  padding: 0 10px;
 }
 
-#usd-flag{
-    width: 16px;
-    border-radius: var(--borderRadius-light);
+#usd-flag {
+  width: 16px;
+  border-radius: var(--borderRadius-light);
 }
-.social{
-    margin-left: 16px;
+.social {
+  margin-left: 16px;
 }
-.social span{
-    color: var(--color-dark);
-    font-size: 14px;
+.social span {
+  color: var(--color-dark);
+  font-size: 14px;
+}
+.social span:last-child{
+    padding-right:0 !important ;
 }
 /* subheader */
+#subheader {
+  gap: 10px;
+}
+#subheader-left {
+}
 
+#subheader form {
+  position: relative;
+  width: 60%;
+}
+#subheader form input {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  text-indent: 10px;
+  border: 1px solid var(--blue);
+  border-radius: var(--borderRadius);
+}
 
+#subheader form button {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-color: var(--blue);
+  border: none;
+  cursor: pointer;
+
+  border-top-right-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+}
+#subheader form span {
+  position: absolute;
+  top: -7px;
+  right: 50px;
+  cursor: pointer;
+}
+.fa-magnifying-glass {
+  color: var(--color-white);
+}
+
+#subheader form input {
+  width: 100%;
+  height: 40px;
+}
+
+#subheader-right {
+  /* width: 20%; */
+  gap: 10px;
+}
+#welcome-account {
+  width: 87px;
+}
+#heart-bag {
+  gap: 12px;
+}
+
+.pinDiv{
+    position: relative;
+}
+.pin{
+    position: absolute;
+    background-color: var(--pin-red);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: var(--color-white);
+    top: -10px;
+    right: -8px;
+    font-size: 9px;
+}
 
 /*! header END------------ */
