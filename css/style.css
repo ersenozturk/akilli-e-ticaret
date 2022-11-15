@@ -1,0 +1,49 @@
+/*! all page styles START */
+#wrapperOut {
+    margin-left: calc((100vw - 100%) / -2);
+    margin-right: calc((100vw - 100%) / -2);
+  }
+  
+  #wrapperInner {
+    max-width: 1516px;
+    margin: 0 auto;
+  }
+  
+  #wrapper {
+    margin: 0 100px;
+  } 
+/*! all page styles END------------ */
+
+/*! header START */
+header{
+    padding: 16px 0;
+}
+header span{
+    font-size: 12px;
+    color: var(--color-light);
+}
+/* supheader */
+.truck{
+    color: var(--blue);
+}
+
+#supheader-right span{
+    padding: 0 10px;
+}
+
+#usd-flag{
+    width: 16px;
+    border-radius: var(--borderRadius-light);
+}
+.social{
+    margin-left: 16px;
+}
+.social span{
+    color: var(--color-dark);
+    font-size: 14px;
+}
+/* subheader */
+
+
+
+/*! header END------------ */

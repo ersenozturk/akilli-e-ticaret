@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* colors */
+  --blue: #243aff;
+  --color-light: #7b7b7b;
+  --color-dark: #242529;
+  --color-white: #ffffff;
+  --bg-categories: #f4f4f4;
+  --green: #33a969;
+
+  /* rest of the vars */
+  --borderRadius-light: 0.15rem;
+  --borderRadius: 0.25rem;
+  --transition: 0.3s ease-in-out all;
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*! global classses START*/
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-bw{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*! global classses END------------*/
+ 
+
