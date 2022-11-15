@@ -42,11 +42,11 @@ header span {
   color: var(--color-dark);
   font-size: 14px;
 }
-.social span:last-child{
-    padding-right:0 !important ;
+.social span:last-child {
+  padding-right: 0 !important ;
 }
-#supheader-right div span{
-    cursor: pointer;
+#supheader-right div span {
+  cursor: pointer;
 }
 /* subheader */
 #subheader {
@@ -103,45 +103,210 @@ header span {
   gap: 12px;
 }
 
-.pinDiv{
-    position: relative;
-    cursor: pointer;
+.pinDiv {
+  position: relative;
+  cursor: pointer;
 }
-.pin{
-    position: absolute;
-    background-color: var(--pin-red);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    color: var(--color-white);
-    top: -10px;
-    right: -8px;
-    font-size: 9px;
+.pin {
+  position: absolute;
+  background-color: var(--pin-red);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: var(--color-white);
+  top: -10px;
+  right: -8px;
+  font-size: 9px;
 }
 
 /* nav */
-nav ul{
-    display: flex;
-    align-items: center;
+nav ul {
+  display: flex;
+  align-items: center;
 }
-nav ul li{
-    padding: 12px 15px;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0 5px;
-    cursor: pointer;
+nav ul li {
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 5px;
+  cursor: pointer;
 }
-nav ul:first-child li:first-child{
-    background-color: var(--blue);
-    color:var(--color-white);
-    border-radius: var(--borderRadius);
+nav ul:first-child li:first-child {
+  background-color: var(--blue);
+  color: var(--color-white);
+  border-radius: var(--borderRadius);
 }
-nav ul:first-child li:nth-child(2){
-    font-weight: bold;
+nav ul:first-child li:nth-child(2) {
+  font-weight: bold;
 }
-#nav-hamg{margin-right: 5px;color: var(--color-white);}
-
-
-
+#nav-hamg {
+  margin-right: 5px;
+  color: var(--color-white);
+}
 
 /*! header END------------ */
+
+/*! main START */
+#banner {
+  background-color: var(--bg-categories);
+}
+
+/* main carousel */
+.owl-dots,
+.owl-nav {
+  display: none;
+}
+
+/* .owl-carousel{
+  position: relative;
+} */
+
+/* .owlnav button {
+  position: absolute;
+  left: -17px;
+  top: 15%;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.owl-carousel .item {
+  /* height: 200px; */
+  background-color: var(--bg-categories);
+}
+.owl-carousel .item img {
+  height: 300px;
+}
+
+/* main categoreis */
+#banner article:last-child {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+#banner section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#banner section img {
+  width: 120px;
+  border-radius: 50%;
+  border: 20px solid var(--color-white);
+}
+#banner section h4 {
+  margin-top: 10px;
+  font-weight: 800;
+}
+#banner section h5 {
+  color: var(--color-light);
+  font-weight: 400;
+  font-size: 10px;
+}
+/*! main END------------ */
+
+/*! article Card START */
+.special-h4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#special-offer {
+  width: 25px;
+  margin-right: 10px;
+}
+
+#offers{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+aside{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--blue);
+}
+
+aside div:first-child p:first-child{
+  background-color: red;
+}
+aside div:first-child p:last-child{
+  background-color: blue;
+}
+
+#addCart {
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--color-white);
+  border-radius: var(--borderRadius);
+  border: none;
+}
+#addCart span {
+  margin-right: 5px;
+  color: var(--color-white);
+}
+
+#aside-img{
+  width: 200px;
+}
+
+
+#offers section {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.card-top{
+  width: 200px;
+}
+
+/*! article Card END----------- */
+/*!article subscribe START */
+#subscribe{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#subscribe-form{
+  position: relative;
+}
+#subscribe-form input{
+  position: absolute;
+  left: 0;
+}
+#subscribe-form button{
+  position: absolute;
+  right: 0;
+}
+/*!article subscribe END---------- */
+
+/*!footer START */
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+footer ul:last-child {
+  display: flex;
+}
+footer ul li {
+  padding: 10px 0;
+}
+
+footer ul li:first-child{
+  color: red;
+}
+footer ul:last-child li{
+  color: blue;
+}
+/*!footer END------ */
