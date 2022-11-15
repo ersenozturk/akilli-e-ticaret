@@ -45,13 +45,13 @@ header span {
 .social span:last-child{
     padding-right:0 !important ;
 }
+#supheader-right div span{
+    cursor: pointer;
+}
 /* subheader */
 #subheader {
   gap: 10px;
 }
-#subheader-left {
-}
-
 #subheader form {
   position: relative;
   width: 60%;
@@ -94,7 +94,6 @@ header span {
 }
 
 #subheader-right {
-  /* width: 20%; */
   gap: 10px;
 }
 #welcome-account {
@@ -106,6 +105,7 @@ header span {
 
 .pinDiv{
     position: relative;
+    cursor: pointer;
 }
 .pin{
     position: absolute;
@@ -118,5 +118,30 @@ header span {
     right: -8px;
     font-size: 9px;
 }
+
+/* nav */
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 5px;
+    cursor: pointer;
+}
+nav ul:first-child li:first-child{
+    background-color: var(--blue);
+    color:var(--color-white);
+    border-radius: var(--borderRadius);
+}
+nav ul:first-child li:nth-child(2){
+    font-weight: bold;
+}
+#nav-hamg{margin-right: 5px;color: var(--color-white);}
+
+
+
 
 /*! header END------------ */
