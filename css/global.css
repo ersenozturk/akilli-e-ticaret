@@ -20,6 +20,7 @@
   /* rest of the vars */
   --borderRadius-light: 0.15rem;
   --borderRadius: 0.25rem;
+  --borderRadius-hard:1rem;
   --transition: 0.3s ease-in-out all;
 
   /* box shadow*/
@@ -36,6 +37,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--color-dark);
   background-color: var(--color-white);
+  overflow-x: hidden;
 }
 
 h1,

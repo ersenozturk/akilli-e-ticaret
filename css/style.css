@@ -219,7 +219,6 @@ nav ul:first-child li:nth-child(2) {
   height: 300px;
 }
 
-
 .ticketDiv {
   margin: 15px 0px;
   display: flex;
@@ -259,6 +258,8 @@ nav ul:first-child li:nth-child(2) {
 #banner article:last-child {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  margin: 0 40px;
+  padding-bottom: 10px;
 }
 #banner section {
   display: flex;
@@ -287,6 +288,7 @@ nav ul:first-child li:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin: 15px 0;
 }
 #special-offer {
   width: 25px;
@@ -296,6 +298,7 @@ nav ul:first-child li:nth-child(2) {
 #offers {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  margin-bottom: 40px;
 }
 
 aside {
@@ -303,27 +306,39 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border: 1px solid var(--blue);
+  padding: 20px;
 }
-
-aside div:first-child p:first-child {
-  background-color: red;
+.asideUPdiv {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-aside div:first-child p:last-child {
-  background-color: blue;
+.asideDOWNdiv {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.asideUPdiv div:first-child {
+  background-color: var(--bg-categories);
+  padding: 10px 40px;
+  border-radius: var(--borderRadius-hard);
 }
 
 #addCart {
-  padding: 12px 15px;
-  font-size: 14px;
-  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 10px;
+  font-weight: 600;
   margin: 0 5px;
   cursor: pointer;
   background-color: var(--blue);
   color: var(--color-white);
   border-radius: var(--borderRadius);
   border: none;
+  cursor: pointer;
 }
 #addCart span {
   margin-right: 5px;
@@ -339,45 +354,104 @@ aside div:first-child p:last-child {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.card-top {
-  width: 200px;
+.card {
+  padding: 10px;
+  border: 0.1px solid rgb(247, 240, 240);
 }
-
+.card-top {
+  width: 160px;
+}
+.card h4 {
+  margin-top: 2px;
+}
+.text-light,
+.stars span {
+  color: var(--color-light);
+  font-size: 12px;
+  font-weight: 300;
+}
+.stars {
+  margin: 8px 0;
+}
 /*! article Card END----------- */
+
 /*!article subscribe START */
 #subscribe {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+.subscribe-info {
+  display: flex;
+}
+.subscribe-info div:first-child {
+  margin-right: 10px;
 }
 #subscribe-form {
   position: relative;
 }
 #subscribe-form input {
   position: absolute;
+  width: 100%;
+  height: 40px;
   left: 0;
+  border: 0.1px solid rgb(247, 240, 240);
+  text-indent: 15px;
+  color: var(--color-light);
+  font-size: 10px;
 }
 #subscribe-form button {
   position: absolute;
+  height: 40px;
   right: 0;
+  background-color: var(--blue);
+  color: var(--color-white);
+  border: none;
+  padding: 12px 20px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
 }
 /*!article subscribe END---------- */
 
 /*!footer START */
 footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
-footer ul:last-child {
-  display: flex;
-}
+
 footer ul li {
   padding: 10px 0;
 }
 
-footer ul li:first-child {
-  color: red;
+footer ul h4,footer div h4 {
+  margin-bottom: 15px;
+}
+footer ul li {
+  cursor: pointer;
 }
 footer ul:last-child li {
   color: blue;
+}
+
+footer div ul{
+  display: flex;
+}
+footer div ul li{
+  height: 30px;
+  width: 30px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;;
+
+}
+footer div ul li:first-child{
+  margin-left: 0;
+
+}
+footer div ul li i{
+  color: var(--color-dark);
 }
 /*!footer END------ */

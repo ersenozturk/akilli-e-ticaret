@@ -129,6 +129,7 @@
 
           <!--! main START -->
           <main id="banner">
+            <!-- carousel banner start-->
             <article>
               <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -151,7 +152,9 @@
                         <span>$</span> <span>199</span> <span>99</span>
                       </p>
                     </div>
-                    <button class="shopNowBtn fw-bold" type="button"> SHOP NOW</button>
+                    <button class="shopNowBtn fw-bold" type="button">
+                      SHOP NOW
+                    </button>
                   </div>
                 </div>
                 <div class="item">
@@ -160,7 +163,7 @@
                     <h1>CARDS</h1>
                   </div>
                   <div>
-                    <img src="./assets/chair.png" alt="" />
+                    <img src="./assets/playcards.png" alt="" />
                   </div>
                   <div class="ticketOutside">
                     <h3>Creative Play Cards</h3>
@@ -174,12 +177,16 @@
                         <span>$</span> <span>119</span> <span>99</span>
                       </p>
                     </div>
-                    <button class="shopNowBtn fw-bold" type="button"> SHOP NOW</button>
+                    <button class="shopNowBtn fw-bold" type="button">
+                      SHOP NOW
+                    </button>
                   </div>
                 </div>
               </div>
             </article>
+            <!-- carousel banner end-->
 
+            <!-- main categoreis start -->
             <article>
               <section>
                 <img class="img-card" src="./assets/coat.jpg" alt="" />
@@ -222,8 +229,10 @@
                 <h5 class="card-text">7 Products</h5>
               </section>
             </article>
+            <!-- main categoreis end -->
           </main>
           <!--! main END -->
+
           <!--! article Card START -->
           <article>
             <h4 class="special-h4">
@@ -236,39 +245,52 @@
             </h4>
             <div id="offers">
               <aside>
-                <div>
-                  <p>OFFERS END IN</p>
-                  <p>-289 Days, 0-8 : 0-57 : 0-47</p>
+                <div class="asideUPdiv">
+                  <div>
+                    <p class="text-light">OFFERS ENDS IN</p>
+                    <p class="fw-bold">-289 Days, 0-8 : 0-57 : 0-47</p>
+                  </div>
+
+                  <div>
+                    <img id="aside-img" src="./assets/drone.jpg" alt="" />
+                  </div>
                 </div>
 
-                <div>
-                  <img id="aside-img" src="./assets/drone.jpg" alt="" />
+                <div class="asideDOWNdiv">
+                  <div>
+                    <p class="text-light">Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem, ipsum dolor.</p>
+                    <p class="stars">
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                      <span><i class="fa-solid fa-star"></i></span>
+                    </p>
+                    <p>
+                      <span
+                        class="text-light"
+                        style="text-decoration: line-through"
+                        >$499.00</span
+                      >
+                      <span>$299.00</span>
+                    </p>
+                  </div>
+                  <button type="button" id="addCart" class="flex-center">
+                    <span><i class="fa-solid fa-bag-shopping"></i></span> ADD TO
+                    CART
+                  </button>
                 </div>
-
-                <div>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                  <p>Lorem, ipsum dolor.</p>
-                  <p class="stars">
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                    <span><i class="fa-solid fa-star"></i></span>
-                  </p>
-                  <p><span>$499.00</span> <span>$299.00</span></p>
-                </div>
-                <button type="button" id="addCart" class="flex-center">
-                  <span><i class="fa-solid fa-bag-shopping"></i></span> ADD TO
-                  CART
-                </button>
               </aside>
 
               <section>
                 <div class="card">
                   <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
                   <h5 class="flex-bw">
-                    <span>Lorem ipsum dolor sit.</span>
-                    <span><i class="fa-regular fa-heart fa-xl"></i></span>
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
                   </h5>
                   <h4>Lorem, ipsum.</h4>
                   <p class="stars">
@@ -280,11 +302,128 @@
                   </p>
                   <p><span>$299.00</span></p>
                 </div>
+
                 <div class="card">
                   <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
                   <h5 class="flex-bw">
-                    <span>Lorem ipsum dolor sit.</span>
-                    <span><i class="fa-regular fa-heart fa-xl"></i></span>
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
+                  </h5>
+                  <h4>Lorem, ipsum.</h4>
+                  <p class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </p>
+                  <p><span>$299.00</span></p>
+                </div>
+
+                <div class="card">
+                  <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
+                  <h5 class="flex-bw">
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
+                  </h5>
+                  <h4>Lorem, ipsum.</h4>
+                  <p class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </p>
+                  <p><span>$299.00</span></p>
+                </div>
+
+                <div class="card">
+                  <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
+                  <h5 class="flex-bw">
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
+                  </h5>
+                  <h4>Lorem, ipsum.</h4>
+                  <p class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </p>
+                  <p><span>$299.00</span></p>
+                </div>
+
+                <div class="card">
+                  <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
+                  <h5 class="flex-bw">
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
+                  </h5>
+                  <h4>Lorem, ipsum.</h4>
+                  <p class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </p>
+                  <p><span>$299.00</span></p>
+                </div>
+
+                <div class="card">
+                  <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
+                  <h5 class="flex-bw">
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
+                  </h5>
+                  <h4>Lorem, ipsum.</h4>
+                  <p class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </p>
+                  <p><span>$299.00</span></p>
+                </div>
+
+                <div class="card">
+                  <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
+                  <h5 class="flex-bw">
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
+                  </h5>
+                  <h4>Lorem, ipsum.</h4>
+                  <p class="stars">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </p>
+                  <p><span>$299.00</span></p>
+                </div>
+
+                <div class="card">
+                  <img class="card-top" src="./assets/chair-cart.jpg" alt="" />
+                  <h5 class="flex-bw">
+                    <span class="text-light">Lorem ipsum dolor sit.</span>
+                    <span class="text-light"
+                      ><i class="fa-regular fa-heart fa-xl"></i
+                    ></span>
                   </h5>
                   <h4>Lorem, ipsum.</h4>
                   <p class="stars">
@@ -303,13 +442,13 @@
           <!--! article subscribe START -->
           <article>
             <div id="subscribe">
-              <div class="flex-center">
+              <div class="subscribe-info">
                 <div>
                   <i class="fa-regular fa-envelope fa-2x"></i>
                 </div>
                 <div>
-                  <p>Subscribe to Our Newsletter</p>
-                  <p>
+                  <p class="fw-bold">Subscribe to Our Newsletter</p>
+                  <p class="text-light">
                     Get all the latest information on Events,Sales and Offers
                   </p>
                 </div>
@@ -319,18 +458,18 @@
                   type="email"
                   name="subscribe-email"
                   id="subscribe-email"
-                  placeholder="Your Email Address"
+                  placeholder="Your E-mail Address"
                 />
                 <button type="submit">SUBSCRIBE NOW!</button>
               </form>
             </div>
           </article>
           <!--! article subscribe END -->
-          <br />
           <!--! footer START -->
+          <br /><br /><br /><br />
           <footer>
             <ul>
-              <li>CUSTOMER SERVİCE</li>
+              <h4>CUSTOMER SERVİCE</h4>
               <li>Help & FAQs</li>
               <li>Order Tracking</li>
               <li>Shipping & Delivery</li>
@@ -340,7 +479,7 @@
             </ul>
 
             <ul>
-              <li>ABOUT US</li>
+              <h4>ABOUT US</h4>
               <li>About Us</li>
               <li>Careers</li>
               <li>Our Stores</li>
@@ -349,18 +488,22 @@
             </ul>
 
             <ul>
-              <li>More INFORMATION</li>
+              <h4>MORE INFORMATION</h4>
               <li>Affiliates</li>
               <li>Refer a Friend</li>
               <li>Student Beans Offers</li>
               <li>Git Vouchers</li>
             </ul>
 
-            <ul>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-              <li><i class="fa-brands fa-twitter"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-            </ul>
+            <div>
+              <h4>SOCIAL MEDIA</h4>
+
+              <ul>
+                <a href="#"><li><i class="fa-brands fa-facebook-f fa-xs"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-twitter fa-xs"></i></li></a>
+                <a href="#"><li><i class="fa-brands fa-instagram fa-xs"></i></li></a>
+              </ul>
+            </div>
           </footer>
           <!--! footer END -->
         </div>
