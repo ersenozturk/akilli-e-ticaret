@@ -150,39 +150,111 @@ nav ul:first-child li:nth-child(2) {
 #banner {
   background-color: var(--bg-categories);
 }
+.banner-h1-div {
+  text-align: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+.banner-h1-div h1:first-child {
+  margin-bottom: -25px;
+}
+.banner-h1-div h1:last-child {
+  font-size: 50px;
+  font-weight: bolder;
+}
+#banner .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: var(--color-white);
+  margin: 20px 40px;
+}
 
 /* main carousel */
-.owl-dots,
-.owl-nav {
+.owl-dots {
   display: none;
 }
 
-/* .owl-carousel{
+.owl-carousel {
   position: relative;
-} */
-
-/* .owlnav button {
-  position: absolute;
-  left: -17px;
-  top: 15%;
-  font-size: 30px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-.owl-carousel .item {
-  /* height: 200px; */
-  background-color: var(--bg-categories);
 }
+
+.owl-prev {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  font-size: 30px !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-categories) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.owl-prev span,
+.owl-next span {
+  color: var(--blue);
+  margin-bottom: 2px;
+}
+.owl-next {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  font-size: 30px !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-categories) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+/* main carousel end */
+
 .owl-carousel .item img {
   height: 300px;
 }
 
+
+.ticketDiv {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket {
+  width: 120px;
+  height: 50px;
+  border-radius: var(--borderRadius);
+  transform: rotate(357deg);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 5px 5px 5px;
+  color: var(--color-white);
+  background-color: var(--pin-red);
+}
+.ticket span:nth-child(2) {
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: -5px !important;
+}
+.ticket span:first-child,
+.ticket span:last-child {
+  font-size: 20px;
+  font-weight: 900;
+}
+.shopNowBtn {
+  width: 100%;
+  border: none;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 12px;
+  border-radius: var(--borderRadius);
+}
 /* main categoreis */
 #banner article:last-child {
   display: grid;
@@ -221,12 +293,12 @@ nav ul:first-child li:nth-child(2) {
   margin-right: 10px;
 }
 
-#offers{
+#offers {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-aside{
+aside {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -235,10 +307,10 @@ aside{
   border: 1px solid var(--blue);
 }
 
-aside div:first-child p:first-child{
+aside div:first-child p:first-child {
   background-color: red;
 }
-aside div:first-child p:last-child{
+aside div:first-child p:last-child {
   background-color: blue;
 }
 
@@ -258,41 +330,40 @@ aside div:first-child p:last-child{
   color: var(--color-white);
 }
 
-#aside-img{
+#aside-img {
   width: 200px;
 }
 
-
 #offers section {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.card-top{
+.card-top {
   width: 200px;
 }
 
 /*! article Card END----------- */
 /*!article subscribe START */
-#subscribe{
+#subscribe {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-#subscribe-form{
+#subscribe-form {
   position: relative;
 }
-#subscribe-form input{
+#subscribe-form input {
   position: absolute;
   left: 0;
 }
-#subscribe-form button{
+#subscribe-form button {
   position: absolute;
   right: 0;
 }
 /*!article subscribe END---------- */
 
 /*!footer START */
-footer{
+footer {
   display: flex;
   justify-content: space-between;
 }
@@ -303,10 +374,10 @@ footer ul li {
   padding: 10px 0;
 }
 
-footer ul li:first-child{
+footer ul li:first-child {
   color: red;
 }
-footer ul:last-child li{
+footer ul:last-child li {
   color: blue;
 }
 /*!footer END------ */
