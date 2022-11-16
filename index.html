@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css file -->
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="/css/global.css" />
     <!-- font-awesome/cdn -->
     <link
@@ -15,8 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Owl Stylesheets -->
 
+    <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css" />
     <link
       rel="stylesheet"
@@ -101,9 +102,9 @@
             <!--? nav Start-->
             <nav class="flex-bw">
               <ul>
-                <li class="flex-center">
+                <li class="flex-center" id="all-depart">
                   <span id="nav-hamg"><i class="fa-solid fa-bars"></i></span>
-                  All DEPARTMENTS
+                  <span> All DEPARTMENTS</span>
                 </li>
                 <li>Home</li>
                 <li>Shop</li>
@@ -124,6 +125,12 @@
                 </li>
               </ul>
             </nav>
+
+            <!--!111111111111111111111111111111111 <ul id="all-depart-ul">
+              <li>
+                asd
+              </li>
+            </ul> -->
           </header>
           <!--! header END -->
 
@@ -499,35 +506,124 @@
               <h4>SOCIAL MEDIA</h4>
 
               <ul>
-                <a href="#"><li><i class="fa-brands fa-facebook-f fa-xs"></i></li></a>
-                <a href="#"><li><i class="fa-brands fa-twitter fa-xs"></i></li></a>
-                <a href="#"><li><i class="fa-brands fa-instagram fa-xs"></i></li></a>
+                <a href="#"
+                  ><li><i class="fa-brands fa-facebook-f fa-sm"></i></li
+                ></a>
+                <a href="#"
+                  ><li><i class="fa-brands fa-twitter fa-sm"></i></li
+                ></a>
+                <a href="#"
+                  ><li><i class="fa-brands fa-instagram fa-sm"></i></li
+                ></a>
               </ul>
             </div>
           </footer>
           <!--! footer END -->
+
+          <!--! pop up START-->
+          <!-- <div id="popupNewsletter">
+            <div>
+              <div class="markDiv"><span>&times;</span></div>
+              <div class="popupNewsletterInner">
+                <div class="popupNewsletterInner-left">
+                  <h3>SUBSCRIBE TO NEWSLETTER</h3>
+                  <p class="text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum, at?
+                  </p>
+
+                  <form action="#" id="form-newsletter">
+                    <input
+                      type="mail"
+                      name="submitInput"
+                      id="submitInput"
+                      placeholder="Your email address"
+                    />
+                    <button type="submit">SUBMIT</button>
+                  </form>
+
+                  <form action="#" id="form-dontShow">
+                    <input type="checkbox" name="dontShow" id="dontShow" />
+                    <label for="dontShow" class="text-light"
+                      >Don't show popup again</label
+                    >
+                  </form>
+                </div>
+                <div class="popupNewsletterInner-right">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div id="popupNewsletter">
+                <div>
+                  <div class="markDiv"><span>&times;</span></div>
+                  <div class="popupNewsletterInner">
+                    <div class="popupNewsletterInner-left">
+                      <h3>SUBSCRIBE TO NEWSLETTER</h3>
+                      <p class="text-light">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum, at?
+                      </p>
+    
+                      <form action="#" id="form-newsletter">
+                        <input
+                          type="mail"
+                          name="submitInput"
+                          id="submitInput"
+                          placeholder="Your email address"
+                        />
+                        <button type="submit">SUBMIT</button>
+                      </form>
+    
+                      <form action="#" id="form-dontShow">
+                        <input type="checkbox" name="dontShow" id="dontShow" />
+                        <label for="dontShow" class="text-light"
+                          >Don't show popup again</label
+                        >
+                      </form>
+                    </div>
+                    <div class="popupNewsletterInner-right">
+                      <img src="" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+          <!--! pop up END-->
         </div>
       </div>
     </div>
     <script src="./owlcarousel/jquery.min.js"></script>
     <script src="./owlcarousel/owl.carousel.js"></script>
+    <script src="./js/app.js"></script>
+
     <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
-          },
-        },
-      });
+
+
+      // body blur scripts
+      // $("#all-depart").click(function () {
+      //   $("body").css("filter", "blur(2px)");
+      //   console.log('first')
+      // });
+
+      //   $("#closebtnid").click(function(){
+      //   $('body').css("filter","");
+      // });
+
+      //     $('#all-depart').on('click', function(){
+      //    $('body').toggleClass('blur');
+      // });
+
+
     </script>
   </body>
 </html>

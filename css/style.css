@@ -136,6 +136,22 @@ nav ul:first-child li:first-child {
   color: var(--color-white);
   border-radius: var(--borderRadius);
 }
+nav ul:first-child li:first-child :nth-child(2){
+  color: var(--color-white);
+}
+
+/*!!!!! 129-143 #all-depart-ul{
+  background-color: red;
+  margin-top: -10px;
+  
+} */
+
+
+
+
+
+
+
 nav ul:first-child li:nth-child(2) {
   font-weight: bold;
 }
@@ -424,10 +440,12 @@ footer ul li {
 }
 
 footer ul h4,footer div h4 {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 footer ul li {
   cursor: pointer;
+  color: var(--color-light);
+  font-size: 12px;
 }
 footer ul:last-child li {
   color: blue;
@@ -455,3 +473,11 @@ footer div ul li i{
   color: var(--color-dark);
 }
 /*!footer END------ */
+
+
+.blur{
+  background: #ccc !important;
+}
+
+
+
