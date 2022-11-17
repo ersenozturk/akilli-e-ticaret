@@ -5,20 +5,19 @@
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%; 
+    height: 100%; 
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
     box-shadow: var(--shadow-4)
 
   }
   
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #fff;
     margin: auto;
-    /* padding: 20px; */
     border: 1px solid #888;
     width: 50vw;
     position: relative;
@@ -43,13 +42,6 @@
   }
 
   /*! popup Newsletter START */
-
-  .none{
-    display: none;
-  }
-  .block{
-    display: block;
-  }
   .markDiv{
     text-align: right;
   }
@@ -102,9 +94,14 @@
     position: relative;
     margin-top: 45px;
   }
+  .popupNewsletterInner-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .popupNewsletterInner-right img{
     width: 100%;
-    height: 100%;
-    background: red;
+    height: 80%;
+
   }
   /*! popup Newsletter END */

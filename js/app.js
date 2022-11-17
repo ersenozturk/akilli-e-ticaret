@@ -1,7 +1,6 @@
 //! banner carousel scripts
-$(".owl-carousel").owlCarousel({
+$(".owl-one").owlCarousel({
   loop: true,
-  margin: 10,
   nav: true,
   responsive: {
     0: {
@@ -16,6 +15,28 @@ $(".owl-carousel").owlCarousel({
   },
 });
 // ----------------
+$(".owl-two").owlCarousel({
+  loop: true,
+  margin: 10,
+  // padding:20,
+  nav: true,
+  responsive: {
+    0: {
+      items: 2,
+    },
+    800: {
+      items: 4,
+    },
+    1000: {
+      items: 6,
+    },
+    1200: {
+      items: 8,
+    },
+  },
+});
+
+
 //! MODAL SCRIPT
 // Get the modal
 let modal = document.getElementById("myModal");
@@ -24,9 +45,9 @@ let modal = document.getElementById("myModal");
 let span = document.getElementsByClassName("markDiv")[0];
 
 // When the 3 seconds after, open the modal
-setTimeout(() => {
-  modal.style.display = "block";
-}, 3000);
+// setTimeout(() => {
+//   modal.style.display = "block";
+// }, 3000);
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -56,3 +77,18 @@ window.onclick = function (event) {
 //       }, 2000);
 //     }
 //   }
+
+
+const allDepart = document.querySelector('#all-depart')
+const allDepartDiv = document.querySelector('#all-depart-div')
+const fashionLi = document.querySelector('#fashion-li')
+
+allDepart.addEventListener('click',()=>{
+  allDepartDiv.style.display = "block";
+})
+
+window.onclick = function (event) {
+  if (event.target == allDepartDiv) {
+    allDepartDiv.style.display = "none";
+  }
+};
