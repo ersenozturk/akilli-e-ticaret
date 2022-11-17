@@ -45,9 +45,9 @@ let modal = document.getElementById("myModal");
 let span = document.getElementsByClassName("markDiv")[0];
 
 // When the 3 seconds after, open the modal
-// setTimeout(() => {
-//   modal.style.display = "block";
-// }, 3000);
+setTimeout(() => {
+  modal.style.display = "block";
+}, 3000);
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -60,24 +60,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
-
-// ------------
-// $(document).ready(function () {
-//     showPopup();
-//   });
-
-//   function showPopup() {
-//     if (localStorage.getItem("YesBtn") !== 1) {
-//       setTimeout(() => {
-//         $("#exampleModal").modal("show");
-//         $("#popup-yes").on("click", function () {
-//           localStorage.setItem("YesBtn", 1);
-//           $("#exampleModal").modal("hide");
-//         });
-//       }, 2000);
-//     }
-//   }
-
 
 const allDepart = document.querySelector('#all-depart')
 const allDepartDiv = document.querySelector('#all-depart-div')
