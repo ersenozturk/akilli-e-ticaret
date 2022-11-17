@@ -1,7 +1,7 @@
 # Proje : akilli e-ticaret  
 
 ## Link
-
+Sayfayı ziyaret ediniz : https://ersenozturk.github.io/akilli-e-ticaret/
 
 
 ## Açıklamalar
