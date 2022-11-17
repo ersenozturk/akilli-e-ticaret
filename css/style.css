@@ -581,4 +581,7 @@ footer div ul li i {
     grid-template-columns: 1fr;
     gap: 15px;
   }
+  #subheader-left img{
+    margin-left: 30px;
+  }
 }

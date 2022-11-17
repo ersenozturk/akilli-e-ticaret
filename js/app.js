@@ -92,3 +92,4 @@ window.onclick = function (event) {
     allDepartDiv.style.display = "none";
   }
 };
+
